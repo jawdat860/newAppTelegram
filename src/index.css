@@ -24,7 +24,7 @@
 }
 .uniform-images {
   width: 200px; /* Set your desired width */
-  height: 150px; /* Set your desired height */
+  height: 1px; /* Set your desired height */
   object-fit: cover; /* This ensures the images cover the area without distortion */
 }
 
