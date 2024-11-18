@@ -27,7 +27,8 @@ function PhoneModel({ thems }) {
         </li>
       }
     >
-      <div
+      <div 
+        id="genn-PhoneModel"
         className={`flex-[1]  ${
           thems === "light" ? "bg-white" : "bg-[#223242]"
         }`}
@@ -35,11 +36,12 @@ function PhoneModel({ thems }) {
         <div className={`p-4`}>
           <ul className="space-y-4">
             <li
+              id="genn-PhoneModel-block-1"
               className={`flex items-center space-x-3 p-3 ${
                 thems === "light"
-                  ? " text-gray-800"
+                  ? " text-gray-800 bg-appColor rounded-[50px]"
                   : "bg-[#4e6174] text-white"
-              }  rounded-md shadow-md transition duration-200`}
+              }  shadow-md transition duration-200`}
             >
               <img src={whatsapp} alt="WhatsApp" className="w-8 h-8" />
               <p className="text-lg font-semibold ">+7(978)519-80-94</p>
@@ -47,9 +49,9 @@ function PhoneModel({ thems }) {
             <li
               className={`flex items-center space-x-3 p-3 ${
                 thems === "light"
-                  ? " text-gray-800"
+                  ? " text-gray-800  bg-appColor rounded-[50px]"
                   : "bg-[#4e6174] text-white"
-              }  rounded-md shadow-md  transition duration-200`}
+              }  shadow-md  transition duration-200`}
             >
               <img src={phone} alt="Phone" className="w-8 h-8" />
               <p className="text-lg font-semibold ">+7(978)519-80-94</p>
@@ -57,9 +59,9 @@ function PhoneModel({ thems }) {
             <li
               className={`flex items-center space-x-3 p-3 ${
                 thems === "light"
-                  ? "text-gray-800"
+                  ? "text-gray-800 bg-appColor rounded-[50px]"
                   : "bg-[#4e6174] text-white"
-              } rounded-md shadow-md hover:bg-gray-200 transition duration-200`}
+              }  shadow-md hover:bg-gray-200 transition duration-200`}
             >
               <img src={telegram} alt="Telegram" className="w-8 h-8" />
               <p className="text-lg font-semibold ">+7(978)519-80-94</p>
@@ -67,9 +69,9 @@ function PhoneModel({ thems }) {
             <li
               className={`flex items-center space-x-3 p-3 ${
                 thems === "light"
-                  ? "text-gray-800"
+                  ? "text-gray-800 bg-appColor rounded-[50px]"
                   : "bg-[#4e6174] text-white"
-              }  rounded-md shadow-md  transition duration-200`}
+              }  shadow-md  transition duration-200`}
             >
               <img src={vk} alt="VK" className="w-8 h-8" />
               <p className="text-lg font-semibold ">+7(978)519-80-94</p>
