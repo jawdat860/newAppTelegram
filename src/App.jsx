@@ -4,11 +4,11 @@ import { useEffect, useMemo, useState } from "react";
 import { Navigate, Route, Router, Routes } from "react-router-dom";
 import WebApp from "@twa-dev/sdk"; // Import the TWA SDK
 import CartProvider from "./components/store/s.jsx"; // Your CartProvider
-import LandingPages from "./components/LandingPages.jsx"; // Landing page component
-import Services from "./components/Services/Services"; // Services component
+
 import Order from "./components/Order/Order.jsx"; // Order component
-import ServicesFa from "./components/Favourite/ServicesFa.jsx"; // Favorite services component
-import ServicesDisFa from "./components/Favourite/ServicesDisFa.jsx";
+
+import Heder from "./components/Heder/Heder.jsx";
+import Body from "./components/Body/Body.jsx";
 
 function App() {
   const navigator = useMemo(() => initNavigator("app-navigation-state"), []);
@@ -63,8 +63,8 @@ function App() {
             path="/"
             element={
               <>
-                <LandingPages thems={thems} />
-                <Services
+                <Heder thems={thems}/>
+                <Body
                   handleExternalLink={handleExternalLink}
                   thems={thems}
                 />
@@ -75,11 +75,11 @@ function App() {
             path="/order"
             element={<Order handleExternalLink={handleExternalLink} thems={thems} />}
           />
-          <Route
+          {/* <Route
             path="/like"
             element={<ServicesFa handleExternalLink={handleExternalLink} />}
           />
-          <Route path="/Dislike" element={<ServicesDisFa />} />
+          <Route path="/Dislike" element={<ServicesDisFa />} /> */}
           <Route path="*" element={<Navigate to="/" />} />{" "}
           {/* Redirect all other paths to home */}
         </Routes>
